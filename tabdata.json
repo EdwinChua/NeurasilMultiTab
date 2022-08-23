@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Gmail",
+        "src": "https://www.gmail.com",
+        "iconFileName": "gmail.png",
+        "active": true
+    },
+    {
+        "title": "Telegram",
+        "iconFileName": "telegram.png",
+        "src": "https://web.telegram.org",
+        "visible": true
+    },
+    {
+        "title": "WhatsApp",
+        "iconFileName": "whatsapp.png",
+        "src": "https://web.whatsapp.com",
+        "visible": true
+    },
+    {
+        "title": "M365",
+        "iconFileName": "m365.png",
+        "src": "https://portal.office.com",
+        "visible": true
+    }
+]

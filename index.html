@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>electron-tabs-demo</title>
+    <link rel="stylesheet" href="styles/titlebar.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/electron-tabs.css">
+    <script>
+        window.fs = require('fs');
+    </script>
+</head>
+
+<body style="margin:0; height: 100%;">
+    <header id="titlebar">
+        <div id="drag-region">Test</div>
+      </header>
+
+    
+        <div class="etabs-tabgroup" style="margin-top: 22px;">
+            <div class="etabs-tabs"></div>
+            <div class="etabs-buttons"></div>
+        </div>
+        <div class="etabs-views"></div>
+    
+    
+
+    <script src="./renderTabs.js"></script>
+</body>
+
+</html>
