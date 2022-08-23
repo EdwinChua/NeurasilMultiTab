@@ -5,7 +5,7 @@
     <title>electron-tabs-demo</title>
     <link rel="stylesheet" href="styles/titlebar.css">
     <link rel="stylesheet" href="styles/home.css">
-    <link rel="stylesheet" href="styles/electron-tabs.css">
+    <!-- <link rel="stylesheet" href="styles/electron-tabs.css"> -->
     <script>
         window.fs = require('fs');
     </script>
@@ -13,18 +13,71 @@
 
 <body style="margin:0; height: 100%;">
     <header id="titlebar">
-        <div id="drag-region">Test</div>
-      </header>
+        <div id="drag-region">Neurasil Productiv</div>
+    </header>
+            <tab-group>
+                <style>
+                    .buttons button {
+                        float: left;
+                        color: #333;
+                        background: none;
+                        border: none;
+                        font-size: 12px;
+                        margin-top: 6px;
+                        border-radius: 2px;
+                        margin-left: 4px;
+                        width: 20px;
+                        text-align: center;
+                        padding: 4px 0;
+                        }
+                    .nav {
+                        width: 100%;
+                        padding-top:32px;
+                        height: 32px;
+                        background-color: #2f3241;
+                        cursor: default;
+                        font: caption;
+                        font-family: 'Courier New', Courier, monospace;
+                        font-size: 14px;
+                        -webkit-user-select: none;
+                        user-select: none;
+                        display: none;
+                        border: 0;
+                    }
+                    .etabs-tab {
+                        font-family: 'Courier New', Courier, monospace !important;
+                        display: none;
+                        position: relative;
+                        color: white;
+                        height: 22px;
+                        padding: 6px 8px 4px;
+                        border: 1px solid rgb(85, 0, 85);
+                        border-radius: 5px;
+                        border-bottom: none;
+                        border-left: none;
+                        background: purple;
+                        font: caption;
+                        font-size: 14px;
+                        background-color: rgb(85, 0, 85);
+                        cursor: default;
+                    }
 
-    
-        <div class="etabs-tabgroup" style="margin-top: 22px;">
+                    .etabs-tab.active {
+                        color: orange;
+                        background: rgb(70, 0, 70);
+                        border: 1px solid rgb(70, 0, 70);
+                    }
+                </style>
+            </tab-group>
+
+    <!-- <div class="etabs-tabgroup" style="margin-top: 22px;">
             <div class="etabs-tabs"></div>
             <div class="etabs-buttons"></div>
         </div>
-        <div class="etabs-views"></div>
-    
-    
+        <div class="etabs-views"></div> -->
 
+
+    <script src="node_modules/electron-tabs/dist/electron-tabs.js"></script>
     <script src="./renderTabs.js"></script>
 </body>
 

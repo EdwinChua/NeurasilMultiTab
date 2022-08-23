@@ -5,6 +5,9 @@ body {
 
 #titlebar {
     padding: 4px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
 }
 
 #titlebar #drag-region {
